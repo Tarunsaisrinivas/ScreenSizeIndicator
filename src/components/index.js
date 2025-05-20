@@ -1,1 +1,1 @@
-export {ResponsiveIndicator} from './ResponsiveIndicator';
+export { default as ResponsiveIndicator } from "./ResponsiveIndicator";

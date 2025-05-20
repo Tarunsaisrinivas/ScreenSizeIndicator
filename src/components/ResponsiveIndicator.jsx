@@ -9,7 +9,7 @@ const getBreakpoint = (width) => {
   return "3xl";
 };
 
-export const ResponsiveIndicator = () => {
+const ResponsiveIndicator = () => {
   const [breakpoint, setBreakpoint] = useState(
     getBreakpoint(window.innerWidth)
   );

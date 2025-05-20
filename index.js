@@ -1,1 +1,1 @@
-export {ResponsiveIndicator} from './src/components/ResponsiveIndicator';
+export { default as ResponsiveIndicator } from "./src/components/ResponsiveIndicator";
