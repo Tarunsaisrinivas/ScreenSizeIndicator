@@ -19,7 +19,8 @@ A lightweight React component that displays the current Tailwind CSS-style scree
 If published to npm:
 ```bash
 npm install screen-indicator
-
+```
+```bash
 🚀 Usage
 
 import { ResponsiveIndicator } from "screen-indicator";
