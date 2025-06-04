@@ -7,10 +7,11 @@ import dtsPlugin from 'vite-plugin-dts';
 // https://vite.dev/config/
 export default defineConfig({
   build: {
-    lib:{
-      entry: path.resolve(__dirname,"index.js"),
-      name: "screen-size-indicator",
-      fileName: (format) => `index.${format}.js`
+    lib: {
+      entry: path.resolve(__dirname, "src/components/index.js"),
+      name: "ResponsiveUI",
+      formats: ["es", "umd"],
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
@@ -21,8 +22,8 @@ export default defineConfig({
         },
       },
     },
-    sourcemap:true,
-    emptyOutDir: true
+    sourcemap: true,
+    emptyOutDir: true,
   },
-  plugins: [react(),tailwindcss(),dtsPlugin()],
-})
+  plugins: [react(), tailwindcss(), dtsPlugin()],
+});
